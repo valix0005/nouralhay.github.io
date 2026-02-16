@@ -1,13 +1,84 @@
-<!DOCTYPE html> 
-<html lang="ar" dir"rtl">
-  <head>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جمعية نور الحي - سلا</title>
-  </head>
-  <body style="font-family: Arial; text-align: center; padding: 50px;">
-    <h1  style="color: #004a99;">جمعية نور الحي للتقافة و الرياضة و الأعمال الاجتماعية</h1>
-    <p>مرحبا بكم في موقعنا الرسمي بسلا</p>
-    <p>تأسست الجمعية بتاريخ 25 مارس 2021</p>
-     <p>تواصلوا معناز : association.nouralhay@gmail.com</p>
-  </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --blue: #0056b3; --gold: #ffcc00; --white: #ffffff; --gray: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: var(--gray); color: #333; line-height: 1.6; }
+        
+        /* الهيدر مع اللوجو */
+        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1523240715630-9918c1381e5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; color: white; padding: 60px 20px; text-align: center; }
+        .logo-img { width: 120px; border-radius: 50%; border: 3px solid var(--gold); margin-bottom: 15px; background: white; }
+        
+        /* الأقسام */
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card i { font-size: 40px; color: var(--blue); margin-bottom: 15px; }
+
+        /* المنشورات */
+        .post { background: white; padding: 15px; border-bottom: 4px solid var(--gold); margin-bottom: 20px; border-radius: 5px; }
+
+        /* تواصل معنا */
+        .social-icons a { font-size: 30px; margin: 0 15px; color: var(--blue); text-decoration: none; }
+        footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://valix0005.github.io/logo.png" alt="لوغو نور الحي" class="logo-img">
+    <h1>جمعية نور الحي للثقافة والرياضة والأعمال الاجتماعية</h1>
+    <p>تأطير، تنشيط، واكتشاف طاقات الطفولة والشباب بسلا</p>
+</header>
+
+<section id="services">
+    <h2 style="text-align: center;">🎨 خدماتنا وتخصصاتنا</h2>
+    <div class="card-grid">
+        <div class="card"><i class="fas fa-clown"></i><h3>فن الكلون</h3><p>عروض ترفيهية للأطفال بمواصفات تربوية.</p></div>
+        <div class="card"><i class="fas fa-drum"></i><h3>باتوكادا</h3><p>مجموعة إيقاعية لتنشيط الكرنفالات والمهرجانات.</p></div>
+        <div class="card"><i class="fas fa-campground"></i><h3>المخيمات</h3><p>تنظيم خرجات ورحلات تنشيطية هادفة.</p></div>
+    </div>
+</section>
+
+<section id="news" style="background: #eee; border-radius: 15px;">
+    <h2>📢 آخر منشوراتنا (أرشيف الأنشطة)</h2>
+    <div class="post">
+        <h4>نشاط بدار الشباب - سلا</h4>
+        <p>قمنا بتنظيم ورشة في الألعاب التربوية لفائدة شباب حي لالة العيايدة (13-20 سنة).</p>
+        <small>التاريخ: فبراير 2026</small>
+    </div>
+</section>
+
+<section id="team">
+    <h2 style="text-align: center;">👥 أعضاء المكتب المسير</h2>
+    <div class="card-grid">
+        <div class="card"><h4>الحسين لبروكي</h4><p>الرئيس</p></div>
+        <div class="card"><h4>عصام مقبول</h4><p>الكاتب العام</p></div>
+        <div class="card"><h4>سعاد خياطي</h4><p>أمينة المال</p></div>
+    </div>
+</section>
+
+<section id="contact" style="text-align: center;">
+    <h2>🔗 تواصلوا معنا</h2>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:association.nouralhay@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div style="margin-top: 20px;">
+        <p>🏠 المقر: لالة العيايدة، سلا</p>
+        <p>📱 الهاتف: 06XXXXXXXX</p>
+    </div>
+</section>
+
+<footer>
+    <p>جميع الحقوق محفوظة لجمعية نور الحي © 2026</p>
+</footer>
+
+</body>
 </html>
